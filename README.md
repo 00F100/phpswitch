@@ -1,5 +1,7 @@
 # PHP Switch
 
+Change to any version of PHP installed on your machine
+
 ## Install
 
 ```
@@ -8,9 +10,6 @@ $ sudo chmod +x /usr/local/bin/phpswitch
 ```
 
 ## Usage
-
-Change to any version of PHP installed on your machine
-
 
 ### To PHP 7.2
 ```
