@@ -11,7 +11,7 @@ fi
 echo 'Switch PHP version To ('$1'):';
 printenv PHPSWITCH_FILE;
 
-unlink /etc/alternatives/php;
+sudo unlink /etc/alternatives/php;
 
 cd /etc/alternatives;
-ln -s $PHPSWITCH_FILE php
+sudo ln -s $PHPSWITCH_FILE php
