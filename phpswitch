@@ -1,6 +1,10 @@
 #!/bin/bash
 
-if [ $1 == "-v" ]; then
+VERSION='1.0.0';
+
+if [ $1 == "-h" ]; then
+	echo "";
+	echo "############ PHP Switch";
 	echo "";
 	echo "     Usage:";
 	echo "     $ phpswitch <version>";
@@ -8,6 +12,17 @@ if [ $1 == "-v" ]; then
 	echo "     Example:";
 	echo "     $ phpswitch 7.2";
 	echo "";
+	echo "     Version: "$VERSION;
+	echo "";
+	echo "     Arguments:";
+	echo "         -h   Help";
+	echo "         -v   version";
+	echo "";
+	exit 0;
+fi
+
+if [ $1 == "-v" ]; then
+	echo $VERSION;
 	exit 0;
 fi
 
