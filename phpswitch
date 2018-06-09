@@ -1,5 +1,16 @@
 #!/bin/bash
 
+if [ $1 == "-v" ]; then
+	echo "";
+	echo "     Usage:";
+	echo "     $ phpswitch <version>";
+	echo "";
+	echo "     Example:";
+	echo "     $ phpswitch 7.2";
+	echo "";
+	exit 0;
+fi
+
 export PHPSWITCH_FILE=`which php$1`;
 
 if [ -z $PHPSWITCH_FILE ]; then
